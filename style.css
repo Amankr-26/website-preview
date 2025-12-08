@@ -132,7 +132,7 @@ html, body {
   font-size: clamp(2.3rem, 4vw, 3rem);
   font-weight: 800;
   background: linear-gradient(120deg, #22c55e, #3b82f6, #a855f7);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   margin-bottom: 0.8rem;
 }
