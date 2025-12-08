@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — KODEZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo-text">{ KODEZ }</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="container">
+        <h1>Projects</h1>
+        <p class="section-subtitle">
+          A collection of things I’ve built — hosted demos + open-source code.
+        </p>
+
+        <div class="projects-grid">
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+            <h2>Web Net Dashboard</h2>
+            <p>
+              A web-based network dashboard built to monitor and visualize data (your description).
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn secondary">Live Demo</a>
+              <a href="https://github.com/amankr-26/web-net-dashboard" target="_blank" class="btn ghost">
+                GitHub Code
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+            <h2>Calculator Web App</h2>
+            <p>
+              A clean animated calculator built with HTML, CSS, and JavaScript as a front-end practice project.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn secondary">Live Demo</a>
+              <a href="https://github.com/amankr-26" target="_blank" class="btn ghost">
+                GitHub Repo (update link)
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <h2>Portfolio v1</h2>
+            <p>
+              My first portfolio layout — simple and minimal. Kept as a reminder of my progress.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn secondary">Live Demo</a>
+              <a href="https://github.com/amankr-26" target="_blank" class="btn ghost">
+                GitHub Repo (update link)
+              </a>
+            </div>
+          </article>
+
+          <!-- Add more projects easily -->
+          <article class="project-card muted-card">
+            <h2>More coming soon…</h2>
+            <p>
+              I’m actively learning & building. New projects will appear here as I push them to GitHub.
+            </p>
+            <a href="https://github.com/amankr-26" target="_blank" class="btn ghost">
+              View all on GitHub
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> KODEZ · Projects by Aman Kumar</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

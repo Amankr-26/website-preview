@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KODEZ — Build. Learn. Create.</title>
+  <meta name="description" content="KODEZ — A modern space to explore projects, portfolio, and experiments by Aman Kumar." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo-text">{ KODEZ }</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Welcome to</p>
+          <h1>KODEZ</h1>
+          <p class="hero-subtitle">
+            A digital space by <strong>Aman Kumar</strong> — where code, projects, and ideas
+            come together. Learn, build, and explore modern web experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="portfolio.html" class="btn primary">View Portfolio</a>
+            <a href="projects.html" class="btn secondary">Explore Projects</a>
+          </div>
+          <p class="hero-note">
+            Handcrafted by a <span>CS student & full-stack learner</span>.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h2>What is KODEZ?</h2>
+          <p>
+            KODEZ is not just a portfolio — it’s a small developer brand for my experiments,
+            dashboards, tools, and learning journey.
+          </p>
+          <ul class="hero-list">
+            <li>🚀 Personal projects & dashboards</li>
+            <li>💻 DSA + Full-stack development journey</li>
+            <li>📂 Direct access to GitHub repos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand / About section -->
+    <section class="section">
+      <div class="container section-grid">
+        <div>
+          <h2>Made under the name <span class="highlight">KODEZ</span></h2>
+          <p>
+            Hi, I’m <strong>Aman Kumar</strong>, an engineering student exploring
+            data structures, algorithms, and full-stack web development.
+          </p>
+          <p>
+            This website is the central hub for my work — if you’re a recruiter,
+            mentor, friend, or just curious, start with the Portfolio or Projects page.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="portfolio.html">→ Go to Portfolio</a></li>
+            <li><a href="projects.html">→ See All Projects</a></li>
+            <li><a href="https://github.com/amankr-26" target="_blank">→ Visit GitHub Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> KODEZ · Built by Aman Kumar</p>
+      <p class="footer-links">
+        <a href="portfolio.html">Portfolio</a>
+        <span>·</span>
+        <a href="projects.html">Projects</a>
+        <span>·</span>
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
